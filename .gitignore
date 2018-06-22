@@ -1,0 +1,7 @@
+*
+!.gitignore
+!*.py
+!README.md
+!img/
+!rastrigif.gif
+!LICENSE.txt
