@@ -1,6 +1,6 @@
 # Generative Neural Networks for Differentiable ES - _GENNES_.
 
-This code is developed to experiments with the models presented in the paper [Generative Neural Models for Global Optimization With
+This code is developed to experiment with the model presented in the paper [Generative Neural Models for Global Optimization With
 Gradients](https://arxiv.org/abs/1805.08594). 
 
 ![Alt Text](rastrigif.gif)
