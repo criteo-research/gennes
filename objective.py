@@ -254,3 +254,17 @@ class Styblinski(ObjFunction):
                 tf.square(self.z[:, i]) + 5 * self.z[:, i]
             self.sum_list.append(zi)
         return 0.5 * tf.add_n(self.sum_list) + 39.16616570377142 * self.dim
+
+
+def create_objective(name, dim):
+    """
+    An automatic factory for ObjFunction objects
+    :param name: name of the objective class (non-case sensitive)
+    :param dim: number of dimensions
+    :return: an ObjFunction object
+    """
+    m = name.lower()
+    for s in ObjFunction.__subclasses__():
+        if m == s.__name__.lower():
+            return s(dim)
+    return None
